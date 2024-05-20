@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Sxm.Core.Client;
+namespace Sxm.Core;
 
 public static class CommandManagerExtensions
 {

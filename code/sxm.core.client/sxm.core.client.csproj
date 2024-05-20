@@ -44,9 +44,7 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CommandManagerExtensions.cs" />
         <Compile Include="CommandManager.cs" />
-        <Compile Include="CommandProvider.cs" />
         <Compile Include="CoreExtensions.cs" />
         <Compile Include="Script.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>

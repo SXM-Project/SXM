@@ -16,4 +16,14 @@
       <OutputPath>../../build/server</OutputPath>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\sxm.core\sxm.core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CitizenFX.Core.Server" Version="1.0.8202" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    </ItemGroup>
+
 </Project>
