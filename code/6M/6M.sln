@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.core.client", "sxm.core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.test.client", "sxm.test.client\sxm.test.client.csproj", "{32437863-5583-46C9-8680-6BCAFC29D7CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.core", "sxm.core\sxm.core.csproj", "{A53DBB29-B371-4B7B-A671-FF7255827B04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{32437863-5583-46C9-8680-6BCAFC29D7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32437863-5583-46C9-8680-6BCAFC29D7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32437863-5583-46C9-8680-6BCAFC29D7CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53DBB29-B371-4B7B-A671-FF7255827B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53DBB29-B371-4B7B-A671-FF7255827B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53DBB29-B371-4B7B-A671-FF7255827B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53DBB29-B371-4B7B-A671-FF7255827B04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E0976CBE-ED12-4FBF-8ADA-AE953E378544} = {84FA1184-30CB-4054-9BFD-956379B451E0}

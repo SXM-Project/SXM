@@ -36,13 +36,9 @@ public static class CoreExtensions
             var entryType = types.FirstOrDefault(x => typeof(Script).IsAssignableFrom(x));
             if (entryType is null) continue;
             
-            Debug.WriteLine("Entry: " + string.Join(", ", a.GetName().Name, entryType.Name));
-            
             var instance = Activator.CreateInstance(entryType) as Script;
             instance?.OnConfigure(services);
         }
-        
-        Debug.WriteLine("Services: " + string.Join(", ", services.GetServices().Select(x => x.Instance)));
         
         commandManager.Initialize(opt.Assemblies.ToArray());
         return services;

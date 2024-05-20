@@ -44,15 +44,10 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CmdAttribute.cs" />
-        <Compile Include="CommandDescriptor.cs" />
         <Compile Include="CommandManagerExtensions.cs" />
         <Compile Include="CommandManager.cs" />
         <Compile Include="CommandProvider.cs" />
         <Compile Include="CoreExtensions.cs" />
-        <Compile Include="ICommandManager.cs" />
-        <Compile Include="ICommandProvider.cs" />
-        <Compile Include="IInitializable.cs" />
         <Compile Include="Script.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
@@ -60,6 +55,10 @@
       <ProjectReference Include="..\libs\sxm.libdi\sxm.libdi.csproj">
         <Project>{e0976cbe-ed12-4fbf-8ada-ae953e378544}</Project>
         <Name>sxm.libdi</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\sxm.core\sxm.core.csproj">
+        <Project>{a53dbb29-b371-4b7b-a671-ff7255827b04}</Project>
+        <Name>sxm.core</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

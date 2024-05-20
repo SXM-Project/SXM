@@ -1,5 +1,5 @@
 ﻿using CitizenFX.Core;
-using Sxm.Core.Client;
+using Sxm.Core;
 using Sxm.DependencyInjection;
 
 namespace Sxm.Test.Client;

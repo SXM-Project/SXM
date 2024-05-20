@@ -10,7 +10,6 @@ public sealed class ServiceProvider(IServiceCollection services) : IServiceProvi
     public object? GetService(Type serviceType)
     {
         var service = services.GetServices().FirstOrDefault(x => x.ServiceType == serviceType);
-        Debug.WriteLine("Get: " + string.Join(", ", serviceType.Name, service?.Instance.GetType().Name, service?.Instance));
         return service?.Instance;
     }
 
