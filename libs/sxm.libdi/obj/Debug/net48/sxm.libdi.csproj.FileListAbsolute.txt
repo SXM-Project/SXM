@@ -1,5 +1,0 @@
-C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\libs\sxm.libdi\obj\Debug\net48\sxm.libdi.csproj.AssemblyReference.cache
-C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\libs\sxm.libdi\obj\Debug\net48\sxm.libdi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\libs\sxm.libdi\obj\Debug\net48\sxm.libdi.AssemblyInfoInputs.cache
-C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\libs\sxm.libdi\obj\Debug\net48\sxm.libdi.AssemblyInfo.cs
-C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\libs\sxm.libdi\obj\Debug\net48\sxm.libdi.csproj.CoreCompileInputs.cache
