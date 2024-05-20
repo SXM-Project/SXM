@@ -3,6 +3,7 @@ Release/
 packages/
 bin/
 obj/
+build/
 
 .idea/
 .code/
