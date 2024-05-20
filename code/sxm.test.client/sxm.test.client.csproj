@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{EE4E2A59-9654-4F03-9C37-1695FE729650}</ProjectGuid>
+        <ProjectGuid>{32437863-5583-46C9-8680-6BCAFC29D7CA}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Sxm.Client</RootNamespace>
-        <AssemblyName>sxm-client.net</AssemblyName>
+        <RootNamespace>Sxm.Test.Client</RootNamespace>
+        <AssemblyName>sxm-test.client</AssemblyName>
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>12</LangVersion>
@@ -20,7 +20,7 @@
         <DebugSymbols>true</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>../../../build/client</OutputPath>
+        <OutputPath>../../build/client</OutputPath>
         <DefineConstants>DEBUG;TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -29,7 +29,7 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>../../../build/client</OutputPath>
+        <OutputPath>../../build/client</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -45,6 +45,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Main.cs" />
+        <Compile Include="Ping.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
@@ -56,9 +57,9 @@
         <Project>{034774da-716d-4013-ae47-adc5ded588e7}</Project>
         <Name>sxm.core.client</Name>
       </ProjectReference>
-      <ProjectReference Include="..\sxm.test.client\sxm.test.client.csproj">
-        <Project>{32437863-5583-46c9-8680-6bcafc29d7ca}</Project>
-        <Name>sxm.test.client</Name>
+      <ProjectReference Include="..\sxm.core\sxm.core.csproj">
+        <Project>{a53dbb29-b371-4b7b-a671-ff7255827b04}</Project>
+        <Name>sxm.core</Name>
       </ProjectReference>
     </ItemGroup>
     <ItemGroup>

@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{32437863-5583-46C9-8680-6BCAFC29D7CA}</ProjectGuid>
+        <ProjectGuid>{034774DA-716D-4013-AE47-ADC5DED588E7}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Sxm.Test.Client</RootNamespace>
-        <AssemblyName>sxm-test.client</AssemblyName>
+        <RootNamespace>Sxm.Core.Client</RootNamespace>
+        <AssemblyName>sxm-core-client.net</AssemblyName>
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>12</LangVersion>
@@ -20,7 +20,7 @@
         <DebugSymbols>true</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>../../../build/client</OutputPath>
+        <OutputPath>../../build/deps</OutputPath>
         <DefineConstants>DEBUG;TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -29,13 +29,13 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>../../../build/client</OutputPath>
+        <OutputPath>../../build/deps</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="CitizenFX.Core.Client, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+        <Reference Include="CitizenFX.Core.Client">
           <HintPath>..\packages\CitizenFX.Core.Client.1.0.8202\lib\net45\CitizenFX.Core.Client.dll</HintPath>
         </Reference>
         <Reference Include="System"/>
@@ -44,8 +44,11 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Main.cs" />
-        <Compile Include="Ping.cs" />
+        <Compile Include="CommandManagerExtensions.cs" />
+        <Compile Include="CommandManager.cs" />
+        <Compile Include="CommandProvider.cs" />
+        <Compile Include="CoreExtensions.cs" />
+        <Compile Include="Script.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
@@ -53,17 +56,10 @@
         <Project>{e0976cbe-ed12-4fbf-8ada-ae953e378544}</Project>
         <Name>sxm.libdi</Name>
       </ProjectReference>
-      <ProjectReference Include="..\sxm.core.client\sxm.core.client.csproj">
-        <Project>{034774da-716d-4013-ae47-adc5ded588e7}</Project>
-        <Name>sxm.core.client</Name>
-      </ProjectReference>
       <ProjectReference Include="..\sxm.core\sxm.core.csproj">
         <Project>{a53dbb29-b371-4b7b-a671-ff7255827b04}</Project>
         <Name>sxm.core</Name>
       </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
-      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
