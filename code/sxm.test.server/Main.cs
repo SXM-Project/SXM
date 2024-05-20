@@ -1,7 +1,7 @@
-﻿using Sxm.Core.Client;
+﻿using Sxm.Core.Server;
 using Sxm.DependencyInjection;
 
-namespace Sxm.Test.Client;
+namespace Sxm.Test.Server;
 
 public class Main : Script
 {

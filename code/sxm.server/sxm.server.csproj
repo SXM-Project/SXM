@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AssemblyName>sxm-server.net</AssemblyName>
         <RootNamespace>Sxm.Server</RootNamespace>
+        <LangVersion>12</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -17,12 +18,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="CitizenFX.Core.Server" Version="1.0.8202" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\sxm.core.server\sxm.core.server.csproj" />
+      <ProjectReference Include="..\sxm.test.server\sxm.test.server.csproj" />
     </ItemGroup>
 
 </Project>

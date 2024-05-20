@@ -2,6 +2,7 @@
 using System.Reflection;
 using CitizenFX.Core;
 using CitizenFX.Core.Native;
+using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 
 namespace Sxm.Core.Server;
 

@@ -1,0 +1,134 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "sxm-server.net/1.0.0": {
+        "dependencies": {
+          "sxm-core-server": "1.0.0",
+          "sxm-test-server": "1.0.0",
+          "sxm-core-server.Reference": "1.0.0.0",
+          "sxm-libdi.net.Reference": "1.0.0.0",
+          "sxm-test-server.Reference": "1.0.0.0"
+        },
+        "runtime": {
+          "sxm-server.net.dll": {}
+        }
+      },
+      "CitizenFX.Core.Server/1.0.8202": {
+        "runtime": {
+          "lib/netstandard20/CitizenFX.Core.Server.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "sxm-core-server/1.0.0": {
+        "dependencies": {
+          "CitizenFX.Core.Server": "1.0.8202",
+          "sxm-libdi.net": "1.0.0",
+          "sxm.core": "1.0.0"
+        },
+        "runtime": {
+          "sxm-core-server.dll": {}
+        }
+      },
+      "sxm-libdi.net/1.0.0": {
+        "runtime": {
+          "sxm-libdi.net.dll": {}
+        }
+      },
+      "sxm-test-server/1.0.0": {
+        "dependencies": {
+          "sxm-core-server": "1.0.0",
+          "sxm-libdi.net": "1.0.0"
+        },
+        "runtime": {
+          "sxm-test-server.dll": {}
+        }
+      },
+      "sxm.core/1.0.0": {
+        "runtime": {
+          "sxm-core.dll": {}
+        }
+      },
+      "sxm-core-server.Reference/1.0.0.0": {
+        "runtime": {
+          "sxm-core-server.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "sxm-libdi.net.Reference/1.0.0.0": {
+        "runtime": {
+          "sxm-libdi.net.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "sxm-test-server.Reference/1.0.0.0": {
+        "runtime": {
+          "sxm-test-server.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sxm-server.net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CitizenFX.Core.Server/1.0.8202": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nU8s6Blx959LNT/bDMKtgqOTIj9uoD24rBS0YqegFyeij8tNADb8bcj9OVYazQTPjFI1XsE9lEfsIUlg9mqlHA==",
+      "path": "citizenfx.core.server/1.0.8202",
+      "hashPath": "citizenfx.core.server.1.0.8202.nupkg.sha512"
+    },
+    "sxm-core-server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sxm-libdi.net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sxm-test-server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sxm.core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sxm-core-server.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sxm-libdi.net.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sxm-test-server.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
