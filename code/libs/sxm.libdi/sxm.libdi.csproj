@@ -4,7 +4,7 @@
         <TargetFramework>net481</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>sxm-libdi.net</AssemblyName>
+        <AssemblyName>sxm-libdi</AssemblyName>
         <RootNamespace>Sxm.DependencyInjection</RootNamespace>
         <LangVersion>12</LangVersion>
     </PropertyGroup>

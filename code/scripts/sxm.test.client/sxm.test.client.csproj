@@ -9,7 +9,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>Sxm.Test.Client</RootNamespace>
-        <AssemblyName>sxm-test.client</AssemblyName>
+        <AssemblyName>sxm-test-client</AssemblyName>
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>12</LangVersion>
