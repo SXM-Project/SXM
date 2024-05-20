@@ -17,8 +17,15 @@ server_scripts {
 files {
     "build/deps/**/*.dll",
     "build/client/**/*.dll",
-    "build/server/**/*.dll"
+    "build/server/**/*.dll",
+    "build/client/ui/wwwroot/*",
 }
+
+-- Prod Mode
+-- ui_page "build/client/ui/wwwroot/index.html"
+
+-- Dev Mode
+ui_page "https://localhost:7219"
 
 -- dependency "webpack"
 -- dependency "yarn"
