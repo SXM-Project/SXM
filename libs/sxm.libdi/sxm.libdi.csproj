@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net481</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>sxm-libdi.net</AssemblyName>
+        <RootNamespace>Sxm.DependencyInjection</RootNamespace>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>../../../build/deps</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>../../../build/deps</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="CitizenFX.Core.Client">
+        <HintPath>..\..\packages\CitizenFX.Core.Client.1.0.8202\lib\net45\CitizenFX.Core.Client.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

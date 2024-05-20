@@ -1,0 +1,7 @@
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\build\client\sxm-client.net.dll
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\build\client\sxm-client.net.pdb
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\sxm.client\obj\Release\sxm.client.csproj.AssemblyReference.cache
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\sxm.client\obj\Release\sxm.client.csproj.CoreCompileInputs.cache
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\sxm.client\obj\Release\sxm.client.csproj.Up2Date
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\sxm.client\obj\Release\sxm-client.net.dll
+C:\Users\bubbl\Desktop\fivem\server-data\resources\[scripts]\sxm\code\6M\sxm.client\obj\Release\sxm-client.net.pdb

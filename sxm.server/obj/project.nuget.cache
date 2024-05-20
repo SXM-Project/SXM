@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "01dPikPQNWtgIQsVTCWItD/JCbMk8RvmR9suY4yKhmmieY5i4pj5g6Z+3/nJeX6fXhUPnWsn4epDt3KsOqvpMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bubbl\\Desktop\\fivem\\server-data\\resources\\[scripts]\\sxm\\code\\6M\\sxm.server\\sxm.server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bubbl\\.nuget\\packages\\citizenfx.core.server\\1.0.8202\\citizenfx.core.server.1.0.8202.nupkg.sha512",
+    "C:\\Users\\bubbl\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
