@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using CitizenFX.Core;
 
 namespace Sxm.DependencyInjection;
 

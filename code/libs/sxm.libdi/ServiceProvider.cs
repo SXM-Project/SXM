@@ -1,6 +1,4 @@
-﻿using CitizenFX.Core;
-
-namespace Sxm.DependencyInjection;
+﻿namespace Sxm.DependencyInjection;
 
 public sealed class ServiceProvider(IServiceCollection services) : IServiceProvider
 {

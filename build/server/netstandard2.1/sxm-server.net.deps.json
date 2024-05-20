@@ -9,7 +9,9 @@
     ".NETStandard,Version=v2.1/": {
       "sxm-server.net/1.0.0": {
         "dependencies": {
+          "CitizenFX.Core.Server": "1.0.8202",
           "sxm-core-server": "1.0.0",
+          "sxm-libdi.net": "1.0.0",
           "sxm-test-server": "1.0.0",
           "sxm-core-server.Reference": "1.0.0.0",
           "sxm-libdi.net.Reference": "1.0.0.0",
