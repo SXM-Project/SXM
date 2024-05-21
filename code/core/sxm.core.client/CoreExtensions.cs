@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using CitizenFX.Core;
 using Sxm.DependencyInjection;
 using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 

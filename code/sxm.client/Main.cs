@@ -10,6 +10,11 @@ public sealed class Main : BaseScript
     {
         var services = new ServiceCollection();
         
+        services.AddSingleton(typeof(ExportDictionary), typeof(ExportDictionary), Exports);
+        services.AddSingleton(typeof(EventHandlerDictionary), typeof(EventHandlerDictionary), EventHandlers);
+        services.AddSingleton(typeof(StateBag), typeof(StateBag), GlobalState);
+        services.AddSingleton(typeof(Player), typeof(Player), LocalPlayer);
+        
         services.AddCore(options =>
         {
             options.Assemblies =
@@ -18,10 +23,5 @@ public sealed class Main : BaseScript
                 typeof(Sxm.Test.Client.Main).Assembly
             ];
         });
-
-        services.AddSingleton(typeof(ExportDictionary), typeof(ExportDictionary), Exports);
-        services.AddSingleton(typeof(EventHandlerDictionary), typeof(EventHandlerDictionary), EventHandlers);
-        services.AddSingleton(typeof(StateBag), typeof(StateBag), GlobalState);
-        services.AddSingleton(typeof(Player), typeof(Player), LocalPlayer);
     }
 }
