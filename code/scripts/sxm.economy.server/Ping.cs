@@ -6,18 +6,11 @@ namespace Sxm.Economy.Server;
 
 public interface IPing;
 
-public class Ping(UserRepository users) : IPing
+public class Ping : IPing
 {
     [Cmd("ping")]
     public void PingCmd(int count)
     {
         Debug.WriteLine("Pong: " + count);
-
-        var user = new User
-        {
-            Id = 27
-        };
-
-        users.Add(user);
     }
 }
