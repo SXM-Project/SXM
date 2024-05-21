@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CitizenFX.Core;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Sxm.MongoDB;
@@ -24,6 +25,11 @@ public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where T
     protected IMongoCollection<TEntity> GetCollection()
     {
         return _db.Database.GetCollection<TEntity>(CollectionName);
+    }
+    
+    protected IMongoCollection<BsonDocument> GetDocumentCollection()
+    {
+        return _db.Database.GetCollection<BsonDocument>(CollectionName);
     }
 
     public virtual IReadOnlyList<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate)
@@ -85,6 +91,20 @@ public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where T
         return (await GetCollection().ReplaceOneAsync(Filter.Eq(field, value), newEntity)).ModifiedCount > 0;
     }
 
+    public bool InsertDocument(BsonDocument document)
+    {
+        try
+        {
+            GetDocumentCollection().InsertOne(document);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"{nameof(InsertDocument)} -> {ex.StackTrace}");
+            return false;
+        }
+    }
+    
     public virtual bool Add(TEntity entity)
     {
         try
