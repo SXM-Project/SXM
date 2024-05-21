@@ -4,8 +4,6 @@ using Sxm.MongoDB.Repositories.Collections.Users;
 
 namespace Sxm.Core.Server.Database;
 
-public interface IMongoExports;
-
 public sealed class MongoExports(UserRepository users) : IMongoExports
 {
     [Export("mongo_insert")]

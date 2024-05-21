@@ -2,12 +2,13 @@
 using MongoDB.Driver;
 using Sxm.Core.Client;
 using Sxm.Core.Server.Database;
+using Sxm.Core.Server.Services;
 using Sxm.DependencyInjection;
 using Sxm.MongoDB.Extensions;
 using Sxm.MongoDB.Repositories;
 using Sxm.MongoDB.Repositories.Collections.Users;
 
-namespace Sxm.Core.Server;
+namespace Sxm.Core.Server.Extensions;
 
 public static class CoreExtensions
 {

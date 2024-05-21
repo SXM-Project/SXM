@@ -3,7 +3,7 @@ using System.Reflection;
 using CitizenFX.Core;
 using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 
-namespace Sxm.Core.Server;
+namespace Sxm.Core.Server.Services;
 
 internal class ExportManager(IServiceProvider services, ExportDictionary exports) : IExportManager, IInitializable
 {

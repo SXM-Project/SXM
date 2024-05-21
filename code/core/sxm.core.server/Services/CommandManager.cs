@@ -4,7 +4,7 @@ using CitizenFX.Core;
 using CitizenFX.Core.Native;
 using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 
-namespace Sxm.Core.Server;
+namespace Sxm.Core.Server.Services;
 
 internal class CommandManager(IServiceProvider services) : ICommandManager, IInitializable
 {

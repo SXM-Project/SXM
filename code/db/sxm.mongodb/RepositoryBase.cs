@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CitizenFX.Core;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using Sxm.Core;
 
 namespace Sxm.MongoDB;
 

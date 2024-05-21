@@ -1,5 +1,6 @@
 ﻿using CitizenFX.Core;
 using Sxm.Core.Server;
+using Sxm.Core.Server.Extensions;
 using Sxm.DependencyInjection;
 
 namespace Sxm.Server;
