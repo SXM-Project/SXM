@@ -27,6 +27,16 @@ files {
 -- Dev Mode
 ui_page "https://localhost:7219"
 
+escrow_ignore {
+    ".git/*";
+    "code/*",
+    "build/deps/*",
+    "Makefile.toml",
+    "README.md",
+    ".gitattributes",
+    ".gitignore"
+}
+
 -- dependency "webpack"
 -- dependency "yarn"
 
