@@ -1,0 +1,8 @@
+[tasks.echo]
+script = "echo hello"
+
+[tasks.ui]
+script = "dotnet watch --project code/sxm.client.ui"
+
+[tasks.tw]
+script = "npx tailwindcss -c ./code/tailwind.config.js -i ./code/sxm.client.ui/wwwroot/css/app.css -o ./code/sxm.client.ui/wwwroot/css/app.min.css --watch"
