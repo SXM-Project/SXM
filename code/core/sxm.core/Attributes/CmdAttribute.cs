@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sxm.Core;
+namespace Sxm.Core.Attributes;
 
 [AttributeUsage(AttributeTargets.Method)]
 public class CmdAttribute(string name) : Attribute

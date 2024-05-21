@@ -1,5 +1,6 @@
 ﻿using CitizenFX.Core;
 using MongoDB.Bson;
+using Sxm.Core.Attributes;
 using Sxm.MongoDB.Repositories.Collections.Users;
 
 namespace Sxm.Core.Server.Database;

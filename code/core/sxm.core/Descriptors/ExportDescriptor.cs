@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sxm.Core;
+namespace Sxm.Core.Descriptors;
 
 public readonly struct ExportDescriptor(string name, Delegate action)
 {

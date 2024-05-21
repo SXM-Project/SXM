@@ -1,8 +1,9 @@
 ﻿using System.Linq;
+using Sxm.Core.Descriptors;
 
-namespace Sxm.Core.Client;
+namespace Sxm.Core.Services;
 
-public class CommandProvider(ICommandManager commandManager) : ICommandProvider
+public sealed class CommandProvider(ICommandManager commandManager) : ICommandProvider
 {
     public CommandDescriptor? GetCommand(string name) => commandManager.Commands.FirstOrDefault(x => x.Name == name);
 }

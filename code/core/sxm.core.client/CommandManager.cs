@@ -5,6 +5,8 @@ using System.Linq.Expressions;
 using System.Reflection;
 using CitizenFX.Core;
 using CitizenFX.Core.Native;
+using Sxm.Core.Attributes;
+using Sxm.Core.Descriptors;
 using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 
 namespace Sxm.Core.Client;

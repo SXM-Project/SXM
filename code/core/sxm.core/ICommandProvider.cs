@@ -1,4 +1,6 @@
-﻿namespace Sxm.Core;
+﻿using Sxm.Core.Descriptors;
+
+namespace Sxm.Core;
 
 public interface ICommandProvider
 {

@@ -1,5 +1,6 @@
 ﻿using CitizenFX.Core;
 using Sxm.Core;
+using Sxm.Core.Attributes;
 
 namespace Sxm.Economy.Client;
 

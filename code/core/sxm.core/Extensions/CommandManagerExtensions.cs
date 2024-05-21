@@ -1,6 +1,7 @@
 ﻿using System.Linq;
+using Sxm.Core.Descriptors;
 
-namespace Sxm.Core;
+namespace Sxm.Core.Extensions;
 
 public static class CommandManagerExtensions
 {

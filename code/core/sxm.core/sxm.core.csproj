@@ -41,21 +41,18 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CmdAttribute.cs" />
-        <Compile Include="CommandDescriptor.cs" />
-        <Compile Include="CommandManagerExtensions.cs" />
-        <Compile Include="CommandProvider.cs" />
-        <Compile Include="CoreOptions.cs" />
-        <Compile Include="ExportAttribute.cs" />
-        <Compile Include="ExportDescriptor.cs" />
+        <Compile Include="Attributes\CmdAttribute.cs" />
+        <Compile Include="Attributes\ExportAttribute.cs" />
+        <Compile Include="Descriptors\CommandDescriptor.cs" />
+        <Compile Include="Descriptors\ExportDescriptor.cs" />
+        <Compile Include="Extensions\CommandManagerExtensions.cs" />
         <Compile Include="ICommandManager.cs" />
         <Compile Include="ICommandProvider.cs" />
         <Compile Include="IExportManager.cs" />
         <Compile Include="IInitializable.cs" />
+        <Compile Include="Models\CoreOptions.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Economy\" />
+        <Compile Include="Services\CommandProvider.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

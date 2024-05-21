@@ -1,5 +1,6 @@
 ﻿using CitizenFX.Core;
 using Sxm.Core;
+using Sxm.Core.Attributes;
 using Sxm.MongoDB.Repositories.Collections.Users;
 
 namespace Sxm.Economy.Server;

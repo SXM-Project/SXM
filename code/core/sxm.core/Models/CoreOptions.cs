@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Sxm.Core;
+namespace Sxm.Core.Models;
 
 public class CoreOptions
 {
