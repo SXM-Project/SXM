@@ -1,4 +1,6 @@
-﻿namespace Sxm.MongoDB.Repositories.Collections.Users;
+﻿using Sxm.Core.Attributes;
+
+namespace Sxm.MongoDB.Repositories.Collections.Users;
 
 public sealed class UserRepository(SxmDb db) : RepositoryBase<User>(db)
 {

@@ -10,6 +10,7 @@ using Sxm.DependencyInjection.Services;
 using Sxm.MongoDB.Extensions;
 using Sxm.MongoDB.Repositories;
 using Sxm.MongoDB.Repositories.Collections.Users;
+using MongoExports = Sxm.MongoDB.MongoExports;
 
 namespace Sxm.Core.Server.Extensions;
 
@@ -44,8 +45,8 @@ public static class CoreExtensions
         services.AddSingleton(typeof(SxmDb), typeof(SxmDb), db);
         services.AddSingleton(typeof(UserRepository), typeof(UserRepository), userRepository);
 
-        var mongoExports = new MongoExports(userRepository);
-        services.AddSingleton<IMongoExports, MongoExports>(mongoExports);
+        var mongoExports = new MongoExports();
+        services.AddSingleton(typeof(MongoExports), typeof(MongoExports), mongoExports);
         
         services
             .AddSingleton<ICommandManager, CommandManager>(commandManager)

@@ -6,6 +6,7 @@ using CitizenFX.Core;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using Sxm.Core;
+using Sxm.Core.Attributes;
 
 namespace Sxm.MongoDB;
 
@@ -90,20 +91,6 @@ public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where T
         TEntity newEntity)
     {
         return (await GetCollection().ReplaceOneAsync(Filter.Eq(field, value), newEntity)).ModifiedCount > 0;
-    }
-
-    public bool InsertDocument(BsonDocument document)
-    {
-        try
-        {
-            GetDocumentCollection().InsertOne(document);
-            return true;
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"{nameof(InsertDocument)} -> {ex.Message}");
-            return false;
-        }
     }
     
     public virtual bool Add(TEntity entity)

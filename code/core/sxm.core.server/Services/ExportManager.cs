@@ -21,10 +21,12 @@ internal class ExportManager(IServiceProvider services, ExportDictionary exports
             foreach (var type in types)
             {
                 if (type == GetType()) continue;
+             
+                Debug.WriteLine("Exporting: " + type);
                 
                 var service = services.GetService(type);
                 if (service is null) continue;
-
+                
                 // Get methods from the implementation type instead of the service type
                 var methods = service.GetType().GetMethods(Flags);
 
