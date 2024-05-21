@@ -9,7 +9,7 @@ using Sxm.Core.Attributes;
 using Sxm.Core.Descriptors;
 using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 
-namespace Sxm.Core.Client;
+namespace Sxm.Core.Client.Services;
 
 internal class CommandManager(IServiceProvider services) : ICommandManager, IInitializable
 {
