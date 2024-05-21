@@ -1,7 +1,7 @@
 ﻿using CitizenFX.Core;
 using Sxm.Core;
 
-namespace Sxm.Test.Server;
+namespace Sxm.Economy.Server;
 
 public interface IPing;
 

@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{D5286A5D-0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{3DAAE3F8-59F8-4271-BAB6-C415D1048F52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.test.client", "scripts\sxm.test.client\sxm.test.client.csproj", "{32437863-5583-46C9-8680-6BCAFC29D7CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.economy.client", "scripts\sxm.economy.client\sxm.economy.client.csproj", "{32437863-5583-46C9-8680-6BCAFC29D7CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.test.server", "scripts\sxm.test.server\sxm.test.server.csproj", "{01F94A3C-49EF-42D0-A578-ED80200338B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.economy.server", "scripts\sxm.economy.server\sxm.economy.server.csproj", "{01F94A3C-49EF-42D0-A578-ED80200338B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.core", "core\sxm.core\sxm.core.csproj", "{A53DBB29-B371-4B7B-A671-FF7255827B04}"
 EndProject
@@ -24,7 +24,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.core.server", "core\sxm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.client.ui", "sxm.client.ui\sxm.client.ui.csproj", "{6DC271F6-2577-41B3-9882-E661CE07F05B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{52B36802-B02D-426F-94D6-94019F41197E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "economy", "economy", "{52B36802-B02D-426F-94D6-94019F41197E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sxm.economy.shared", "scripts\sxm.economy.shared\sxm.economy.shared.csproj", "{32437863-5583-46C9-8680-6BCAFC29D7CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

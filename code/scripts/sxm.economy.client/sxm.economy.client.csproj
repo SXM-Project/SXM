@@ -8,8 +8,8 @@
         <ProjectGuid>{32437863-5583-46C9-8680-6BCAFC29D7CA}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Sxm.Test.Client</RootNamespace>
-        <AssemblyName>sxm-test-client</AssemblyName>
+        <RootNamespace>Sxm.Economy.Client</RootNamespace>
+        <AssemblyName>sxm-economy-client</AssemblyName>
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>12</LangVersion>
@@ -60,6 +60,10 @@
         <ProjectReference Include="..\..\libs\sxm.libdi\sxm.libdi.csproj">
             <Project>{e0976cbe-ed12-4fbf-8ada-ae953e378544}</Project>
             <Name>sxm.libdi</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\sxm.economy.shared\sxm.economy.shared.csproj">
+          <Project>{32437863-5583-46c9-8680-6bcafc29d7ca}</Project>
+          <Name>sxm.economy.shared</Name>
         </ProjectReference>
     </ItemGroup>
     <ItemGroup>

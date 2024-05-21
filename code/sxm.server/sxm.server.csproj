@@ -20,7 +20,7 @@
     <ItemGroup>
       <ProjectReference Include="..\core\sxm.core.server\sxm.core.server.csproj" />
       <ProjectReference Include="..\libs\sxm.libdi\sxm.libdi.csproj" />
-      <ProjectReference Include="..\scripts\sxm.test.server\sxm.test.server.csproj" />
+      <ProjectReference Include="..\scripts\sxm.economy.server\sxm.economy.server.csproj" />
     </ItemGroup>
 
     <ItemGroup>

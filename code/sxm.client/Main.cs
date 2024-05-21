@@ -20,7 +20,7 @@ public sealed class Main : BaseScript
             options.Assemblies =
             [
                 typeof(Main).Assembly,
-                typeof(Sxm.Test.Client.Main).Assembly
+                typeof(Sxm.Economy.Client.Main).Assembly
             ];
         });
     }
