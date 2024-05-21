@@ -19,7 +19,7 @@
 
     <ItemGroup>
       <Reference Include="CitizenFX.Core.Client">
-        <HintPath>..\..\packages\CitizenFX.Core.Client.1.0.8202\lib\net45\CitizenFX.Core.Client.dll</HintPath>
+        <HintPath>..\..\packages\CitizenFX.Core.Client.1.0.8216\lib\net45\CitizenFX.Core.Client.dll</HintPath>
       </Reference>
     </ItemGroup>
 

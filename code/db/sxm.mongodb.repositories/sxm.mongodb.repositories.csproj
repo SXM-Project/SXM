@@ -2,10 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>net481</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>sxm-core-server</AssemblyName>
-        <RootNamespace>Sxm.Core.Server</RootNamespace>
+        <AssemblyName>sxm-mongodb-repositories</AssemblyName>
+        <RootNamespace>Sxm.MongoDB.Repositories</RootNamespace>
         <LangVersion>12</LangVersion>
     </PropertyGroup>
 
@@ -18,14 +17,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="CitizenFX.Core.Server" Version="1.0.8216" />
+      <Folder Include="Collections\" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\db\sxm.mongodb.repositories\sxm.mongodb.repositories.csproj" />
-      <ProjectReference Include="..\..\db\sxm.mongodb\sxm.mongodb.csproj" />
-      <ProjectReference Include="..\..\libs\sxm.libdi\sxm.libdi.csproj" />
-      <ProjectReference Include="..\sxm.core\sxm.core.csproj" />
+      <ProjectReference Include="..\sxm.mongodb\sxm.mongodb.csproj" />
     </ItemGroup>
 
 </Project>

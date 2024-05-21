@@ -1,5 +1,9 @@
-﻿using Sxm.Core.Client;
+﻿using MongoDB.Driver;
+using Sxm.Core.Client;
 using Sxm.DependencyInjection;
+using Sxm.MongoDB.Extensions;
+using Sxm.MongoDB.Repositories;
+using Sxm.MongoDB.Repositories.Collections.Users;
 
 namespace Sxm.Core.Server;
 
@@ -14,6 +18,23 @@ public static class CoreExtensions
         
         var commandManager = new CommandManager(provider);
         var commandProvider = new CommandProvider(commandManager);
+        
+        var settings = new MongoClientSettings
+        {
+#if DEBUG
+            Server = new MongoServerAddress("localhost", 27017),
+#endif
+            ConnectTimeout = TimeSpan.FromSeconds(5),
+            DirectConnection = true
+        };
+        
+        services.UseMongoDb(settings);
+        
+        var db = new SxmDb(settings);
+        var userRepository = new UserRepository(db);
+        
+        services.AddSingleton(typeof(SxmDb), typeof(SxmDb), db);
+        services.AddSingleton(typeof(UserRepository), typeof(UserRepository), userRepository);
         
         services
             .AddSingleton<ICommandManager, CommandManager>(commandManager)

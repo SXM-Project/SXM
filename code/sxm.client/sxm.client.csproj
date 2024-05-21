@@ -35,8 +35,8 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="CitizenFX.Core.Client, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-          <HintPath>..\packages\CitizenFX.Core.Client.1.0.8214\lib\net45\CitizenFX.Core.Client.dll</HintPath>
+        <Reference Include="CitizenFX.Core.Client">
+          <HintPath>..\packages\CitizenFX.Core.Client.1.0.8216\lib\net45\CitizenFX.Core.Client.dll</HintPath>
         </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
@@ -64,18 +64,9 @@
         <Project>{32437863-5583-46c9-8680-6bcafc29d7ca}</Project>
         <Name>sxm.economy.client</Name>
       </ProjectReference>
-      <ProjectReference Include="..\scripts\sxm.test.client\sxm.economy.client.csproj">
-        <Project>{32437863-5583-46c9-8680-6bcafc29d7ca}</Project>
-        <Name>sxm.economy.client</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\sxm.core.client\sxm.core.client.csproj">
-        <Project>{034774da-716d-4013-ae47-adc5ded588e7}</Project>
-        <Name>sxm.core.client</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\sxm.core\sxm.core.csproj">
-        <Project>{a53dbb29-b371-4b7b-a671-ff7255827b04}</Project>
-        <Name>sxm.core</Name>
-      </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

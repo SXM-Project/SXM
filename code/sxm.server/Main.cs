@@ -9,11 +9,11 @@ public sealed class Main : BaseScript
     public Main()
     {
         var services = new ServiceCollection();
-        
+
         services.AddSingleton(typeof(ExportDictionary), typeof(ExportDictionary), Exports);
         services.AddSingleton(typeof(EventHandlerDictionary), typeof(EventHandlerDictionary), EventHandlers);
         services.AddSingleton(typeof(StateBag), typeof(StateBag), GlobalState);
-        
+
         services.AddCore(options =>
         {
             options.Assemblies =

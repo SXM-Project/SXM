@@ -11,7 +11,7 @@ client_scripts {
 }
 
 server_scripts {
-    "build/server/netstandard2.1/sxm-server.net.dll"
+    "build/server/net481/sxm-server.net.dll"
 }
 
 files {

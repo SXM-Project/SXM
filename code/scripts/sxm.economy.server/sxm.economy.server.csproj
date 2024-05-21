@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>net481</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AssemblyName>sxm-economy-server</AssemblyName>
@@ -20,7 +20,6 @@
     <ItemGroup>
       <ProjectReference Include="..\..\core\sxm.core.server\sxm.core.server.csproj" />
       <ProjectReference Include="..\..\libs\sxm.libdi\sxm.libdi.csproj" />
-      <ProjectReference Include="..\sxm.economy.shared\sxm.economy.shared.csproj" />
     </ItemGroup>
 
 </Project>
