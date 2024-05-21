@@ -1,7 +1,6 @@
 ﻿using CitizenFX.Core;
 using Sxm.Core.Server;
 using Sxm.DependencyInjection;
-using Sxm.Server.Database;
 
 namespace Sxm.Server;
 
@@ -20,10 +19,9 @@ public sealed class Main : BaseScript
             options.Assemblies =
             [
                 typeof(Main).Assembly,
+                typeof(Script).Assembly,
                 typeof(Sxm.Economy.Server.Main).Assembly
             ];
         });
-
-        services.AddSingleton<IMongoExports, MongoExports>();
     }
 }

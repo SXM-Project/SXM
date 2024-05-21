@@ -46,8 +46,11 @@
         <Compile Include="CommandManagerExtensions.cs" />
         <Compile Include="CommandProvider.cs" />
         <Compile Include="CoreOptions.cs" />
+        <Compile Include="ExportAttribute.cs" />
+        <Compile Include="ExportDescriptor.cs" />
         <Compile Include="ICommandManager.cs" />
         <Compile Include="ICommandProvider.cs" />
+        <Compile Include="IExportManager.cs" />
         <Compile Include="IInitializable.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>

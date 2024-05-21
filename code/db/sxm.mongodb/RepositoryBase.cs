@@ -100,7 +100,7 @@ public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where T
         }
         catch (Exception ex)
         {
-            Debug.WriteLine($"{nameof(InsertDocument)} -> {ex.StackTrace}");
+            Debug.WriteLine($"{nameof(InsertDocument)} -> {ex.Message}");
             return false;
         }
     }
