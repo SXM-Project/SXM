@@ -5,6 +5,8 @@ using Sxm.Core.Server.Database;
 using Sxm.Core.Server.Services;
 using Sxm.Core.Services;
 using Sxm.DependencyInjection;
+using Sxm.DependencyInjection.Extensions;
+using Sxm.DependencyInjection.Services;
 using Sxm.MongoDB.Extensions;
 using Sxm.MongoDB.Repositories;
 using Sxm.MongoDB.Repositories.Collections.Users;

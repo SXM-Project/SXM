@@ -1,6 +1,7 @@
 ﻿using System;
 using MongoDB.Driver;
 using Sxm.DependencyInjection;
+using Sxm.DependencyInjection.Extensions;
 
 namespace Sxm.MongoDB.Extensions;
 

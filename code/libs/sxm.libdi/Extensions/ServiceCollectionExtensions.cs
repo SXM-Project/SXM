@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
+using Sxm.DependencyInjection.Descriptors;
 
-namespace Sxm.DependencyInjection;
+namespace Sxm.DependencyInjection.Extensions;
 
 public static class ServiceCollectionExtensions
 {

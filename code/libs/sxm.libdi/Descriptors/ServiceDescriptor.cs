@@ -1,4 +1,4 @@
-﻿namespace Sxm.DependencyInjection;
+﻿namespace Sxm.DependencyInjection.Descriptors;
 
 public sealed class ServiceDescriptor(Type serviceType, Type implementationType, ServiceLifetime lifetime, object instance)
 {

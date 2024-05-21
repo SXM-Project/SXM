@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Sxm.DependencyInjection.Descriptors;
 
 namespace Sxm.DependencyInjection;
 

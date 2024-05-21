@@ -3,6 +3,8 @@ using System.Linq;
 using Sxm.Core.Models;
 using Sxm.Core.Services;
 using Sxm.DependencyInjection;
+using Sxm.DependencyInjection.Extensions;
+using Sxm.DependencyInjection.Services;
 using IServiceProvider = Sxm.DependencyInjection.IServiceProvider;
 
 namespace Sxm.Core.Client.Services;

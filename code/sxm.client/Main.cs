@@ -2,6 +2,7 @@
 using Sxm.Core.Client;
 using Sxm.Core.Client.Services;
 using Sxm.DependencyInjection;
+using Sxm.DependencyInjection.Extensions;
 
 namespace Sxm.Client;
 

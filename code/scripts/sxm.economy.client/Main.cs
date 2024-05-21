@@ -1,5 +1,6 @@
 ﻿using Sxm.Core.Client;
 using Sxm.DependencyInjection;
+using Sxm.DependencyInjection.Extensions;
 
 namespace Sxm.Economy.Client;
 

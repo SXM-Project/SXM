@@ -1,4 +1,4 @@
-﻿namespace Sxm.DependencyInjection;
+﻿namespace Sxm.DependencyInjection.Services;
 
 public sealed class ServiceProvider(IServiceCollection services) : IServiceProvider
 {
