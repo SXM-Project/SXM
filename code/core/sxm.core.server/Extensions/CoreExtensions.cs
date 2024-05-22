@@ -1,7 +1,6 @@
 ﻿using CitizenFX.Core;
 using MongoDB.Driver;
 using Sxm.Core.Models;
-using Sxm.Core.Server.Database;
 using Sxm.Core.Server.Services;
 using Sxm.Core.Services;
 using Sxm.DependencyInjection;
