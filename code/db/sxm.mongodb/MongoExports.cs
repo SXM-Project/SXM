@@ -30,6 +30,12 @@ public sealed class MongoExports
     }
 
     [Export]
+    public List<string> ListCollectionNames()
+    {
+        return _db.ListCollectionNames().ToList();
+    }
+    
+    [Export]
     public void InsertOne(string collectionName, object documentObj)
     {
         var collection = _db.GetCollection<BsonDocument>(collectionName);
@@ -109,7 +115,7 @@ public sealed class MongoExports
         {
             var filter = BsonDocument.Create(filterObj);
             var result = collection.Find(filter).FirstOrDefault();
-
+            
             return result?.ToJson();
         }
         catch (Exception ex)
